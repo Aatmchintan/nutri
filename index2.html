@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NutriBloom - Home Part 2</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <header>
+    <nav>
+      <div class="logo">NutriBloom</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home Part 1</a></li>
+        <li><a href="home-part2.html">Home Part 2</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Tools Section -->
+  <section id="tools" class="section">
+    <h2>Tools</h2>
+    <div class="tool-grid">
+      <div class="tool-card">
+        <h3>BMI Calculator</h3>
+        <input type="number" id="weight" placeholder="Weight (kg)">
+        <input type="number" id="height" placeholder="Height (cm)">
+        <button onclick="calculateBMI()">Calculate BMI</button>
+        <p id="bmi-result"></p>
+      </div>
+      <div class="tool-card">
+        <h3>Calorie Calculator</h3>
+        <input type="number" id="age" placeholder="Age">
+        <input type="number" id="weight-cal" placeholder="Weight (kg)">
+        <input type="number" id="height-cal" placeholder="Height (cm)">
+        <button onclick="calculateCalories()">Calculate Calories</button>
+        <p id="calorie-result"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Healthy Recipes Section -->
+  <section id="recipes" class="section">
+    <h2>Healthy Recipes</h2>
+    <div class="recipe-grid">
+      <div class="recipe-card">
+        <img src="images/quinoa.jpg" alt="Quinoa Salad">
+        <h3>Quinoa Salad</h3>
+        <p>A refreshing and nutritious salad.</p>
+        <a href="recipes/quinoa-salad.html">View Recipe</a>
+      </div>
+      <div class="recipe-card">
+        <img src="images/chicken.jpg" alt="Grilled Chicken">
+        <h3>Grilled Chicken</h3>
+        <p>High-protein grilled chicken recipe.</p>
+        <a href="recipes/grilled-chicken.html">View Recipe</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Exercise & Yoga Videos Section -->
+  <section id="videos" class="section">
+    <h2>Exercise & Yoga Videos</h2>
+    <div class="video-grid">
+      <div class="video-card">
+        <img src="images/mornyoga.jpg" alt="Morning Yoga">
+        <h3>Morning Yoga Routine</h3>
+        <video controls>
+          <source src="videos/morning-yoga.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="video-card">
+        <img src="images/workout.jpg" alt="Full Body Workout">
+        <h3>Full Body Workout</h3>
+        <video controls>
+          <source src="videos/full-body-workout.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2023 NutriBloom. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
